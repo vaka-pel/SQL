@@ -10,10 +10,10 @@ CREATE OR ALTER PROCEDURE sp_InsertScheduleStacionar
 	@start_date			AS	DATE
 AS
 BEGIN
-	DECLARE @group			   AS	INT		 = (SELECT group_id		  FROM Groups	   WHERE group_name		  LIKE @group_name);
+	DECLARE @group			   AS	INT		 = (SELECT group_id			  FROM Groups	   WHERE group_name		  LIKE @group_name);
 	DECLARE @teacher		   AS	SMALLINT = (SELECT teacher_id		  FROM Teachers	   WHERE first_name       LIKE @teacher_first_name);
 	DECLARE @discipline		   AS	SMALLINT = (SELECT discipline_id	  FROM Disciplines WHERE  discipline_name LIKE @discipline_name);
-	DECLARE @number_of_lessons AS   TINYINT	 = (SELECT number_of_lessons FROM Disciplines WHERE discipline_name  LIKE @discipline_name);
+	DECLARE @number_of_lessons AS   TINYINT	 = (SELECT number_of_lessons  FROM Disciplines WHERE discipline_name  LIKE @discipline_name);
 	--DECLARE @lesson_number   AS   TINYINT	 = 0;
 	--DECLARE @date			   AS	DATE	 = @start_date;
 	DECLARE @start_time		   AS   TIME	 = (SELECT start_time		  FROM	Groups	   WHERE	group_id=@group);
