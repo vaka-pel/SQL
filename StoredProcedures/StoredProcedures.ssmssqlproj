@@ -51,6 +51,12 @@
           <AssociatedConnUserName />
           <FullPath>SQLQuery1-sp INSERT lesson.sql</FullPath>
         </FileNode>
+        <FileNode Name="SQLQuery2-sp_INSERT Schedule1221.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery2-sp_INSERT Schedule1221.sql</FullPath>
+        </FileNode>
         <FileNode Name="SQLQuery7-sp_InsertHolidaysFor.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-29KL5UV\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DESKTOP-29KL5UV\SQLEXPRESS</AssociatedConnSrvName>
